@@ -1,0 +1,79 @@
+
+#task1 > p > .triangle{
+  width: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+#task1 > p > .answer{
+  width: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.task{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#task3 > p > .answer{
+  width: 300px;
+}
+
+#task5 > img{
+  display: inline-block;
+  height: 200px;
+  transition: 1s;
+}
+
+#line{
+  width: 50%;
+}
+
+#task7 > p > input{
+  width: 30px;
+}
+
+textarea{
+  resize: none;
+}
+
+table{
+  width: 50%;
+  height: 20%;
+  table-layout: fixed;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  opacity: 0.7;
+  border: 1px solid black;
+}
+
+#dividers{
+  width: 70%;
+}
+
+#task14 > textarea{
+  resize: both;
+}
+
+#task15 > hr{
+  margin-top: 0;
+}
+
+#task15 {
+  width: 90%;
+}
+
+#task15 > div {
+  height: 5%;
+  width: 40%;
+  border: 3px solid black;
+}
+
+#taho {
+  background-color: green;
+  height: 100%;
+  width: 0%;
+}

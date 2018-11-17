@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./tasks.js"></script>
+    <title>lab #8</title>
+  </head>
+  <body>
+    <div id="task1" class="task">
+      <h2>#1 Визначення площі трикутника за координатами його точок</h2>
+      <p>Точка А: x=<input type="text" class="triangle"> y=<input type="text" class="triangle"></p>
+      <p>Точка Б: x=<input type="text" class="triangle"> y=<input type="text" class="triangle"></p>
+      <p>Точка В: x=<input type="text" class="triangle"> y=<input type="text" class="triangle"></p>
+      <p>Площа: <input type="text" class="answer" onfocus="task1()"></p>
+    </div>
+    <div id="task2" class="task">
+      <h2>#2 Swap</h2>
+      <p>Поле 1: <input type="text" class="swap" onblur="task2()"></p>
+      <p>Поле 2: <input type="text" class="swap" onblur="task2()"></p>
+    </div>
+    <div id="task3" class="task">
+      <h2>#3 Визначення кількості максимальних чисел у масиві</h2>
+      <p>Масив: <input type="text" class="array"></p>
+      <p>Результат: <input type="text" class="answer" onfocus="task3()"></p>
+    </div>
+    <div id="task4" class="task">
+      <h2>#4 Перевірка можливості побудови трикутника</h2>
+      <p>Довжина сторони 1: <input type="text" class="triangle"></p>
+      <p>Довжина сторони 2: <input type="text" class="triangle"></p>
+      <p>Довжина сторони 3: <input type="text" class="triangle"></p>
+      <p>Відповідь: <input type="text" class="answer" onfocus="task4()"></p>
+    </div>
+    <div id="task5" class="task">
+      <h2>#5 Зміна розміру зображення</h2>
+      <img src="./img/logo.png" id="logo" onmouseover="task5('logo', 'over')" onmouseout="task5('logo', 'out')">
+      <img src="./img/phrase.png" id="phrase" onmouseover="task5('phrase', 'over')" onmouseout="task5('phrase', 'out')">
+    </div>
+    <div id="task6" class="task">
+      <h2>#6 Модифікація &lthr&gt </h2>
+      <hr id="line" style="width:100%">
+      <button type="button" name="button" onclick="task6('sub')">Зменшити</button>
+      <button type="button" name="button" onclick="task6('add')">Збільшити</button>
+      <button type="button" name="button" onclick="task6('left')">Змістити вліво</button>
+      <button type="button" name="button" onclick="task6('right')">Змістити вправо</button>
+      <button type="button" name="button" onclick="task6('center')">По центру</button>
+    </div>
+    <div id="task7" class="task">
+      <h2>#7 Обробка анкети слухача курсів </h2>
+      <p>
+        Назва курсу:
+        <select class="form">
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="C#">C#</option>
+        </select>
+      </p>
+      <p>Тривалість(у тижнях): <input type="text" class="form"></p>
+      <p>Мова викладання:
+        <select class="form">
+          <option value="Англійська">Англійська</option>
+          <option value="Українська">Українська</option>
+          <option value="Російська">Російська</option>
+          <option value="Суржик">Суржик</option>
+        </select>
+      </p>
+      <p>
+        <button type="button" name="button" onclick="task7()">Розрахувати</button>
+      </p>
+      <textarea rows="5" cols="50" class="form"></textarea>
+    </div>
+    <div id="task8" class="task">
+      <h2>#8 Зміна налаштувань таблиці </h2>
+      <table id="table">
+        <tr>
+          <td onclick="task8(this, 'colour')"></td>
+          <td onclick="task8(this, 'colour')"></td>
+        </tr>
+        <tr>
+          <td onclick="task8(this, 'colour')"></td>
+          <td onclick="task8(this, 'colour')"></td>
+        </tr>
+      </table>
+      <p>
+        <select id="change_back" onchange="task8(this, 'back')">
+          <option value="back1">Фон №1</option>
+          <option value="back2">Фон №2</option>
+          <option value="back3">Фон №3</option>
+        </select>
+      </p>
+    </div>
+    <div id="task9" class="task">
+      <h2>#9 Розрахунок вартості покупки </h2>
+      <p>Назва товару: <input type="text" class="order"></p>
+      <p>Ціна(у грн): <input type="text" class="order"></p>
+      <p>Кількість(шт): <input type="text" class="order"></p>
+      <p><button type="button" name="button" onclick="task9()">Додати до чеку</button></p>
+      <textarea class="order"></textarea>
+    </div>
+    <div id="task10" class="task">
+      <h2>#10 Інвертування числа </h2>
+      <p>Число: <input type="text" class="rev" oninput="task10(this)"></p>
+      <p>Інвертоване число: <input type="text" id="reverse"></p>
+    </div>
+    <div id="task11" class="task">
+      <h2>#11 Пошук дільників натурального числа</h2>
+      <p>Число: <input type="text" class="rev" oninput="task11(this)"></p>
+      <p>Дільники: <input type="text" id="dividers"></p>
+    </div>
+    <div id="task12" class="task">
+      <h2>#12 Підрахунок кількості щасливих квитків</h2>
+      <p><button type="button" name="button" onclick="task12()">Підрахувати</button></p>
+      <p>Кількість: <input type="text" id="lucky"></p>
+    </div>
+    <div id="task13" class="task">
+      <h2>#13 Визначення номера тижня в році</h2>
+      <p>Дата (у форматі дд.мм.рррр): <input type="text" class="week"></p>
+      <p><button type="button" name="button" onclick="task13()">Визначити номер тижня</button></p>
+      <p>Номер тижня: <input type="text" class="week"></p>
+    </div>
+    <div id="task14" class="task">
+      <h2>#14 Визначення кількості слів</h2>
+      <p>Ваш текст:</p>
+      <textarea oninput="task14(this)"></textarea>
+      <p>Кількість слів: <input type="text" id="count"></p>
+    </div>
+    <div id="task15" class="task">
+      <h2>#15 Анімація</h2>
+      <img src="./img/car.png" width="100px" id="car" style="margin-left: 0%;">
+      <hr>
+      <img src="./img/car1.png" width="100px" class="car" style="margin-left: 0%;">
+      <hr>
+      <img src="./img/car2.png" width="100px" class="car" style="margin-left: 0%;">
+      <hr>
+      <img src="./img/car3.png" width="100px" class="car" style="margin-left: 0%;">
+      <hr>
+      <script src="./source/car.js"></script>
+      <p><button type="button" name="button" onclick="task15('start', my_car)">Старт!</button>
+         <button type="button" name="button" onclick="task15('shift', my_car)">Shift</button>
+      </p>
+      <div>
+        <div id="taho"></div>
+      </div>
+      <p><button type="button" name="button" onclick="task15('again', my_car)">Знову</button></p>
+    </div>
+    <div id="task16" class="task">
+      <h2>#16 Перевірка валідності електронної пошти</h2>
+      <p>Email: <input type="text" class="week" oninput="task16(this)"></p>
+      <p>Відповідь: <input type="text" id="valid" oninput="task16(this)"></p>
+    </div>
+  </body>
+</html>
